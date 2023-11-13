@@ -1,0 +1,134 @@
+/* poster side css */
+.posterContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  position: relative;
+  padding: 35px 0 0 0;
+}
+.containerDiv1 {
+  background-color: rgb(76, 161, 201);
+  color: white;
+  width: fit-content;
+  text-align: center;
+  height: fit-content;
+  grid-row: 1;
+  z-index: 1;
+  position: absolute;
+  margin-top: 30px;
+  padding: 10px;
+  margin-left: 20px;
+}
+.poster {
+  width: 30vw;
+  grid-column: 2;
+  grid-row: 1;
+  padding-left: 50px;
+}
+.containerDiv1 h1 {
+  margin: 0;
+  font-size: 60px;
+}
+.triangle {
+  background-color: rgb(76, 161, 201);
+  width: 70px;
+  bottom: 50px;
+  height: 70px;
+  grid-column: 3;
+  z-index: 2;
+  position: absolute;
+  grid-row: 1;
+  margin-left: -20px;
+}
+.triangleRight {
+  width: 70px;
+  height: 70px;
+  color: white;
+}
+.container {
+  display: flex;
+}
+.details {
+  padding: 0 0 0 50px;
+}
+.lang {
+  color: rgb(167, 165, 165);
+  font-weight: lighter;
+}
+.castContainer {
+  display: flex;
+}
+.cast {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+.synopsis {
+  color: rgb(167, 165, 165);
+}
+.videosPictures {
+  height: 100px;
+}
+.triangleResp {
+  display: none;
+}
+.triangleRightResp {
+  display: none;
+}
+@media (max-width: 1219.99px) {
+  .poster {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30vw;
+  }
+  .castContainer {
+    display: block;
+  }
+  .synopsis {
+    display: block;
+    padding: 0 10px 0 0;
+  }
+  .containerDiv1 {
+    width: 100px;
+  }
+}
+@media (max-width: 999.99px) {
+  .poster {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50vw;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .containerDiv1 {
+    width: 60px;
+    height: 100px;
+    
+  }
+  .containerDiv1 h1 {
+    font-size: 30px;
+  }
+  .containerDiv1 h2 {
+    font-size: 15px;
+  }
+  .triangle {
+    display: none;
+  }
+  .triangleRightResp {
+    display: block;
+    width: 70px;
+    height: 70px;
+    color: white;
+  }
+  .triangleResp {
+    display: grid;
+    background-color: rgb(76, 161, 201);
+    width: 70px;
+    height: 70px;
+    grid-column: 3;
+
+  }
+
+}
